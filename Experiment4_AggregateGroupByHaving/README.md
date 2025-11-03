@@ -47,6 +47,7 @@ group by PatientID-- Paste your SQL code below for Question 1
 ```
 
 **Output:**
+
 <img width="642" height="612" alt="image" src="https://github.com/user-attachments/assets/b8a5d9f6-a795-4a2b-b656-43caa5a895b5" />
 
 
@@ -62,6 +63,7 @@ group by PatientID;
 ```
 
 **Output:**
+
 <img width="592" height="598" alt="image" src="https://github.com/user-attachments/assets/3388b2b7-72a1-4c10-b3e9-84160f08e391" />
 
 
@@ -76,6 +78,7 @@ group by PatientID;
 ```
 
 **Output:**
+
 <img width="623" height="645" alt="image" src="https://github.com/user-attachments/assets/9c875ef5-20ec-41bf-931d-cf777dce1ad1" />
 
 **Question 4**
@@ -88,6 +91,7 @@ select avg(length(email)) as avg_email_length_below_30 from customer where city 
 ```
 
 **Output:**
+
 <img width="628" height="308" alt="image" src="https://github.com/user-attachments/assets/0b88b976-757a-4032-921a-e6c0efb83b80" />
 
 **Question 5**
@@ -101,6 +105,7 @@ where income>50000;
 ```
 
 **Output:**
+
 <img width="639" height="272" alt="image" src="https://github.com/user-attachments/assets/5a140000-800d-4a3b-a9bd-311fabce57bb" />
 
 
@@ -115,6 +120,7 @@ where price>0.5;
 ```
 
 **Output:**
+
 <img width="591" height="306" alt="image" src="https://github.com/user-attachments/assets/91d56112-211e-4d6f-9ecc-093ed4f1e14b" />
 
 **Question 7**
@@ -126,6 +132,7 @@ select max(purch_amt) as MAXIMUM from orders;
 ```
 
 **Output:**
+
 <img width="364" height="304" alt="image" src="https://github.com/user-attachments/assets/c2ee2049-a4e2-4856-8750-8842c07c215c" />
 
 
@@ -141,6 +148,7 @@ having Total_Cost>50;
 ```
 
 **Output:**
+
 <img width="600" height="329" alt="image" src="https://github.com/user-attachments/assets/5eabf6ed-a289-4b2f-8364-1dff2584979e" />
 
 
@@ -155,6 +163,7 @@ having SUM(salary)>5000;
 ```
 
 **Output:**
+
 <img width="531" height="353" alt="image" src="https://github.com/user-attachments/assets/51c1e635-6476-4ca1-ab20-a7940889fa1c" />
 
 
@@ -170,6 +179,7 @@ having AVG(salary)<15000;
 ```
 
 **Output:**
+
 <img width="564" height="574" alt="image" src="https://github.com/user-attachments/assets/5f5c3b06-2542-413e-a125-00d604811d1d" />
 
 
