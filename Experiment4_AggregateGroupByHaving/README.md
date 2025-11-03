@@ -38,123 +38,281 @@ HAVING condition;
 
 **Question 1**
 --
--- Paste Question 1 here
+How many appointments are scheduled for each patient?
+
+Sample table: Appointments Table
+
+name                  type
+--------------------  ----------
+AppointmentID         INTEGER
+PatientID             INTEGER
+DoctorID              INTEGER
+AppointmentDateTime   DATETIME
+Purpose               TEXT
+Status                TEXT
+For example:
+
+Result
+PatientID   TotalAppointments
+----------  -----------------
+3           3
+5           2
+6           1
+7           1
+10          3
+
 
 ```sql
--- Paste your SQL code below for Question 1
+select PatientID,count(PatientID)as TotalAppointments from appointments
+group by PatientID-- Paste your SQL code below for Question 1
 ```
 
 **Output:**
+<img width="642" height="612" alt="image" src="https://github.com/user-attachments/assets/b8a5d9f6-a795-4a2b-b656-43caa5a895b5" />
 
-![Output1](output.png)
 
 **Question 2**
 ---
--- Paste Question 2 here
+Write a SQL Query to find how many medications are prescribed for each patient?
+
+Sample table:MedicalRecords Table
+
+For example:
+
+Result
+PatientID   AvgMedications
+----------  --------------
+4           5
+6           1
+7           1
+8           3
+
 
 ```sql
--- Paste your SQL code below for Question 2
+select PatientID,count(Medications) as AvgMedications 
+from MedicalRecords
+group by PatientID;
 ```
 
 **Output:**
+<img width="592" height="598" alt="image" src="https://github.com/user-attachments/assets/3388b2b7-72a1-4c10-b3e9-84160f08e391" />
 
-![Output2](output.png)
 
 **Question 3**
 ---
--- Paste Question 3 here
+How many medical records are there for each patient?
+
+Sample table:MedicalRecords Table
+For example:
+
+Result
+PatientID   TotalRecords
+----------  ------------
+4           4
+5           1
+6           1
+7           1
+8           1
+10          2
+
 
 ```sql
--- Paste your SQL code below for Question 3
+select PatientID,count(PatientID)as TotalRecords from MedicalRecords
+group by PatientID;
 ```
 
 **Output:**
-
-![Output3](output.png)
+<img width="623" height="645" alt="image" src="https://github.com/user-attachments/assets/9c875ef5-20ec-41bf-931d-cf777dce1ad1" />
 
 **Question 4**
 ---
--- Paste Question 4 here
+Write a SQL query to Calculate the average email length (in characters) for people who lives in Mumbai city
+Table: customer
+
+name        type
+----------  ----------
+id          INTEGER
+name        TEXT   
+city        TEXT
+email       TEXT
+phone       INTEGER
+For example:
+
+Result
+avg_email_length_below_30
+-------------------------
+14.0
+
 
 ```sql
--- Paste your SQL code below for Question 4
+select avg(length(email)) as avg_email_length_below_30 from customer where city like "%Mumbai%";
 ```
 
 **Output:**
-
-![Output4](output.png)
+<img width="628" height="308" alt="image" src="https://github.com/user-attachments/assets/0b88b976-757a-4032-921a-e6c0efb83b80" />
 
 **Question 5**
 ---
--- Paste Question 5 here
+Write a SQL query to find how many employees have an income greater than 50K?
+
+Table: employee
+
+name        type
+----------  ----------
+id          INTEGER
+name        TEXT
+age         INTEGER
+city        TEXT
+income      INTEGER
+For example:
+
+Result
+employees_count
+---------------
+8
+
 
 ```sql
--- Paste your SQL code below for Question 5
+select count(id) as employees_count from employee
+where income>50000;
 ```
 
 **Output:**
+<img width="639" height="272" alt="image" src="https://github.com/user-attachments/assets/5a140000-800d-4a3b-a9bd-311fabce57bb" />
 
-![Output5](output.png)
 
 **Question 6**
 ---
--- Paste Question 6 here
+Write a SQL query to calculate total available amount of fruits that has a price greater than 0.5 . Return total Count. 
+Note: Inventory attribute contains amount of fruits
+Table: fruits
+
+name        type
+----------  ----------
+id          INTEGER
+name        TEXT
+unit        TEXT
+inventory   INTEGER
+price       REAL
+ 
+
+For example:
+Result
+total_available_amount
+----------------------
+160
+
 
 ```sql
--- Paste your SQL code below for Question 6
+select sum(inventory) as total_available_amount from fruits
+where price>0.5;
 ```
 
 **Output:**
-
-![Output6](output.png)
+<img width="591" height="306" alt="image" src="https://github.com/user-attachments/assets/91d56112-211e-4d6f-9ecc-093ed4f1e14b" />
 
 **Question 7**
 ---
--- Paste Question 7 here
+Write a SQL query to find the maximum purchase amount.
+Sample table: orders
+
+ord_no      purch_amt   ord_date    customer_id  salesman_id
+
+----------  ----------  ----------  -----------  -----------
+
+70001       150.5       2012-10-05  3005         5002
+
+70009       270.65      2012-09-10  3001         5005
+
+70002       65.26       2012-10-05  3002         5001
+
+
+For example:
+
+Result
+MAXIMUM
+----------
+5760.0
+
 
 ```sql
--- Paste your SQL code below for Question 7
+select max(purch_amt) as MAXIMUM from orders;
 ```
 
 **Output:**
+<img width="364" height="304" alt="image" src="https://github.com/user-attachments/assets/c2ee2049-a4e2-4856-8750-8842c07c215c" />
 
-![Output7](output.png)
 
 **Question 8**
 ---
--- Paste Question 8 here
+Write the SQL query that accomplishes the selection of total cost of all products in each category from the "products" table and includes only those products where the total cost is greater than 50.
+Sample table: product
+For example:
+
+Result
+category_id  Total_Cost
+-----------  ----------
+2            63
+
 
 ```sql
--- Paste your SQL code below for Question 8
+select category_id,sum(price) as Total_Cost from products
+group by category_id
+having Total_Cost>50;
 ```
 
 **Output:**
+<img width="600" height="329" alt="image" src="https://github.com/user-attachments/assets/5eabf6ed-a289-4b2f-8364-1dff2584979e" />
 
-![Output8](output.png)
 
 **Question 9**
 ---
--- Paste Question 9 here
+Write the SQL query that achieves the grouping of data by age intervals using the expression (age/5)5, calculates the total salary sum for each group, and excludes groups where the total salary sum is not greater than 5000.
+Sample table: customer1
+For example:
+
+Result
+age_group   SUM(salary)
+----------  -----------
+20          16500
+25          16500
 
 ```sql
--- Paste your SQL code below for Question 9
+select (age/5)*5 as age_group,SUM(salary) from customer1
+group by age_group
+having SUM(salary)>5000;
 ```
 
 **Output:**
+<img width="531" height="353" alt="image" src="https://github.com/user-attachments/assets/51c1e635-6476-4ca1-ab20-a7940889fa1c" />
 
-![Output9](output.png)
 
 **Question 10**
 ---
--- Paste Question 10 here
+Which cities (addresses) in the "customer1" table have an average salary lesser than Rs. 15000
+
+Sample table: customer1
+For example:
+Result
+address     AVG(salary)
+----------  -----------
+Ahmedabad   2000.0
+Bhopal      8500.0
+Delhi       1500.0
+Hyderabad   4500.0
+Indore      10000.0
+Kota        2000.0
+Mumbai      6500.0
+
 
 ```sql
--- Paste your SQL code below for Question 10
+select address,AVG(salary) from customer1
+group by address
+having AVG(salary)<15000;
 ```
 
 **Output:**
-
-![Output10](output.png)
+<img width="564" height="574" alt="image" src="https://github.com/user-attachments/assets/5f5c3b06-2542-413e-a125-00d604811d1d" />
 
 
 ## RESULT
