@@ -38,28 +38,7 @@ HAVING condition;
 
 **Question 1**
 --
-How many appointments are scheduled for each patient?
-
-Sample table: Appointments Table
-
-name                  type
---------------------  ----------
-AppointmentID         INTEGER
-PatientID             INTEGER
-DoctorID              INTEGER
-AppointmentDateTime   DATETIME
-Purpose               TEXT
-Status                TEXT
-For example:
-
-Result
-PatientID   TotalAppointments
-----------  -----------------
-3           3
-5           2
-6           1
-7           1
-10          3
+<img width="556" height="519" alt="image" src="https://github.com/user-attachments/assets/c68ac73a-4d13-4ecc-bf4c-2fc02d8978e6" />
 
 
 ```sql
@@ -73,19 +52,7 @@ group by PatientID-- Paste your SQL code below for Question 1
 
 **Question 2**
 ---
-Write a SQL Query to find how many medications are prescribed for each patient?
-
-Sample table:MedicalRecords Table
-
-For example:
-
-Result
-PatientID   AvgMedications
-----------  --------------
-4           5
-6           1
-7           1
-8           3
+<img width="891" height="459" alt="image" src="https://github.com/user-attachments/assets/d2ec3e6d-ebef-44de-83f1-cf981cd9eb23" />
 
 
 ```sql
@@ -100,20 +67,7 @@ group by PatientID;
 
 **Question 3**
 ---
-How many medical records are there for each patient?
-
-Sample table:MedicalRecords Table
-For example:
-
-Result
-PatientID   TotalRecords
-----------  ------------
-4           4
-5           1
-6           1
-7           1
-8           1
-10          2
+<img width="950" height="509" alt="image" src="https://github.com/user-attachments/assets/9f633944-b1a0-4f7d-bb94-802178b2b460" />
 
 
 ```sql
@@ -126,22 +80,7 @@ group by PatientID;
 
 **Question 4**
 ---
-Write a SQL query to Calculate the average email length (in characters) for people who lives in Mumbai city
-Table: customer
-
-name        type
-----------  ----------
-id          INTEGER
-name        TEXT   
-city        TEXT
-email       TEXT
-phone       INTEGER
-For example:
-
-Result
-avg_email_length_below_30
--------------------------
-14.0
+<img width="914" height="427" alt="image" src="https://github.com/user-attachments/assets/8662c79e-8481-40f7-8224-2f4d0d36f033" />
 
 
 ```sql
@@ -153,23 +92,7 @@ select avg(length(email)) as avg_email_length_below_30 from customer where city 
 
 **Question 5**
 ---
-Write a SQL query to find how many employees have an income greater than 50K?
-
-Table: employee
-
-name        type
-----------  ----------
-id          INTEGER
-name        TEXT
-age         INTEGER
-city        TEXT
-income      INTEGER
-For example:
-
-Result
-employees_count
----------------
-8
+<img width="703" height="411" alt="image" src="https://github.com/user-attachments/assets/b0c1ae5e-dc36-43e9-9114-1d58659246b3" />
 
 
 ```sql
@@ -183,24 +106,7 @@ where income>50000;
 
 **Question 6**
 ---
-Write a SQL query to calculate total available amount of fruits that has a price greater than 0.5 . Return total Count. 
-Note: Inventory attribute contains amount of fruits
-Table: fruits
-
-name        type
-----------  ----------
-id          INTEGER
-name        TEXT
-unit        TEXT
-inventory   INTEGER
-price       REAL
- 
-
-For example:
-Result
-total_available_amount
-----------------------
-160
+<img width="871" height="466" alt="image" src="https://github.com/user-attachments/assets/6a8dcd09-4320-4a89-bd7f-5a39a65507f3" />
 
 
 ```sql
@@ -213,27 +119,7 @@ where price>0.5;
 
 **Question 7**
 ---
-Write a SQL query to find the maximum purchase amount.
-Sample table: orders
-
-ord_no      purch_amt   ord_date    customer_id  salesman_id
-
-----------  ----------  ----------  -----------  -----------
-
-70001       150.5       2012-10-05  3005         5002
-
-70009       270.65      2012-09-10  3001         5005
-
-70002       65.26       2012-10-05  3002         5001
-
-
-For example:
-
-Result
-MAXIMUM
-----------
-5760.0
-
+<img width="599" height="451" alt="image" src="https://github.com/user-attachments/assets/a62e2738-f428-44c8-82fa-f4a2f4581b4e" />
 
 ```sql
 select max(purch_amt) as MAXIMUM from orders;
@@ -245,14 +131,7 @@ select max(purch_amt) as MAXIMUM from orders;
 
 **Question 8**
 ---
-Write the SQL query that accomplishes the selection of total cost of all products in each category from the "products" table and includes only those products where the total cost is greater than 50.
-Sample table: product
-For example:
-
-Result
-category_id  Total_Cost
------------  ----------
-2            63
+<img width="1204" height="444" alt="image" src="https://github.com/user-attachments/assets/781f0d49-90e8-4cb9-a30b-57be334917e6" />
 
 
 ```sql
@@ -267,15 +146,7 @@ having Total_Cost>50;
 
 **Question 9**
 ---
-Write the SQL query that achieves the grouping of data by age intervals using the expression (age/5)5, calculates the total salary sum for each group, and excludes groups where the total salary sum is not greater than 5000.
-Sample table: customer1
-For example:
-
-Result
-age_group   SUM(salary)
-----------  -----------
-20          16500
-25          16500
+<img width="1252" height="448" alt="image" src="https://github.com/user-attachments/assets/423767ab-45d4-48db-9165-737e85b862a9" />
 
 ```sql
 select (age/5)*5 as age_group,SUM(salary) from customer1
@@ -289,20 +160,7 @@ having SUM(salary)>5000;
 
 **Question 10**
 ---
-Which cities (addresses) in the "customer1" table have an average salary lesser than Rs. 15000
-
-Sample table: customer1
-For example:
-Result
-address     AVG(salary)
-----------  -----------
-Ahmedabad   2000.0
-Bhopal      8500.0
-Delhi       1500.0
-Hyderabad   4500.0
-Indore      10000.0
-Kota        2000.0
-Mumbai      6500.0
+<img width="788" height="496" alt="image" src="https://github.com/user-attachments/assets/c387dfdb-1a1e-46d2-b533-48895d0745bc" />
 
 
 ```sql
