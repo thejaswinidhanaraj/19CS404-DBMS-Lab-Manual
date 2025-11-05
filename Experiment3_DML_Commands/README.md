@@ -191,7 +191,7 @@ LIMIT 3;
 
 **SEB Grades**
 
-<img width="1021" height="78" alt="image" src="https://github.com/user-attachments/assets/a76e5558-50ae-4509-80e6-693e41a5533f" />
+<img width="1023" height="70" alt="image" src="https://github.com/user-attachments/assets/ac139edc-8004-4ea7-ac73-b92de1f3d56b" />
 
 
 ## RESULT
