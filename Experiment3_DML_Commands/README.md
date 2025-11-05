@@ -61,6 +61,7 @@ where city='Chennai';
 
 **Question 2**
 ---
+<img width="1204" height="609" alt="image" src="https://github.com/user-attachments/assets/ba7a368f-b410-4462-ab52-777e4c186e6a" />
 
 ```sql
 update employees
@@ -75,6 +76,7 @@ where department_id=20 and job_id LIKE '%MAN';
 **Question 3**
 ---
 <img width="1194" height="613" alt="image" src="https://github.com/user-attachments/assets/709b004b-a81f-4e79-bb33-4e3530b38be3" />
+
 ```sql
 update Employees
 set email='not available',commission_pct=0.55
@@ -82,12 +84,14 @@ where department_id=110;
 ```
 
 **Output:**
+
 <img width="1186" height="405" alt="image" src="https://github.com/user-attachments/assets/2835da06-633a-44cb-a0a8-45839e86ce5e" />
 
 
 **Question 4**
 ---
 <img width="1223" height="726" alt="image" src="https://github.com/user-attachments/assets/301dd61b-4388-4330-840d-cb00ce442244" />
+
 ```sql
 update Employees
 set salary=salary+500,email='updated'
@@ -95,6 +99,7 @@ where job_id='SA_REP' AND commission_pct>0.15;
 ```
 
 **Output:**
+
 <img width="1187" height="554" alt="image" src="https://github.com/user-attachments/assets/50092ab5-da91-4f48-baa6-4524c086b67b" />
 
 
@@ -108,6 +113,7 @@ where surgery_id=3;
 ```
 
 **Output:**
+
 <img width="1195" height="416" alt="image" src="https://github.com/user-attachments/assets/6e509db0-4a6f-4f9f-b093-8cf3602f2fad" />
 
 
@@ -121,6 +127,7 @@ where WORKING_AREA='New York';
 ```
 
 **Output:**
+
 <img width="1246" height="671" alt="image" src="https://github.com/user-attachments/assets/06ce061e-279c-426f-a258-5039e49425c0" />
 
 
@@ -134,6 +141,7 @@ where (GRADE>2 and PAYMENT_AMT<(SELECT AVG(PAYMENT_AMT)FROM CUSTOMER)) OR OUTSTA
 ```
 
 **Output:**
+
 <img width="1239" height="567" alt="image" src="https://github.com/user-attachments/assets/d1949571-213f-436f-bdff-58787d544da4" />
 
 
@@ -147,6 +155,7 @@ WHERE specialization is NULL;
 ```
 
 **Output:**
+
 <img width="1124" height="842" alt="image" src="https://github.com/user-attachments/assets/e13c06f1-942f-4dd1-bc27-cfefefe1b854" />
 
 
@@ -160,6 +169,7 @@ where CUST_COUNTRY not in ('India','USA');
 ```
 
 **Output:**
+
 <img width="1249" height="464" alt="image" src="https://github.com/user-attachments/assets/df1fe973-11b0-4128-9f2c-0aee20d59140" />
 
 
@@ -175,10 +185,12 @@ LIMIT 3;
 ```
 
 **Output:**
+
 <img width="860" height="238" alt="image" src="https://github.com/user-attachments/assets/8a696ac0-5e32-4f66-be39-fa7a0232d65b" />
 
 
 **SEB Grades**
+
 <img width="1021" height="78" alt="image" src="https://github.com/user-attachments/assets/a76e5558-50ae-4509-80e6-693e41a5533f" />
 
 
