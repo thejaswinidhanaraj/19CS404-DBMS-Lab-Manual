@@ -259,6 +259,10 @@ CHECK(list_price>=discount and discount>=0 and list_price>=0)
 **Output:**
 <img width="1218" height="300" alt="image" src="https://github.com/user-attachments/assets/dd64b57c-039e-4bd7-9a86-4e8601489932" />
 
+**SEB Grades**
+
+<img width="1058" height="64" alt="image" src="https://github.com/user-attachments/assets/b82401b7-3c7d-4cec-b9bf-9f6c24525fea" />
+
 
 ## RESULT
 Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
