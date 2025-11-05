@@ -182,6 +182,10 @@ having AVG(salary)<15000;
 
 <img width="564" height="574" alt="image" src="https://github.com/user-attachments/assets/5f5c3b06-2542-413e-a125-00d604811d1d" />
 
+**SEB Grades**
+
+<img width="1053" height="67" alt="image" src="https://github.com/user-attachments/assets/1d94449c-f117-489f-b28d-4bbed4fdb723" />
+
 
 ## RESULT
 Thus, the SQL queries to implement aggregate functions, GROUP BY, and HAVING clause have been executed successfully.
