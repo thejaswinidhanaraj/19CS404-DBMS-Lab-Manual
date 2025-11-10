@@ -209,15 +209,23 @@ HAVING COUNT(c.customer_id) > 1;
 
 **Question 10**
 ---
-<img width="1095" height="676" alt="image" src="https://github.com/user-attachments/assets/ad434b4c-c1d5-4ccb-b048-72efab3ce676" />
+<img width="1034" height="522" alt="image" src="https://github.com/user-attachments/assets/5f2fd33e-97ee-4d36-8908-78b725325d2d" />
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT *
+FROM customer
+WHERE city <> (
+    SELECT city
+    FROM customer
+    WHERE id = (SELECT MAX(id) FROM customer)
+);
+
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="1234" height="494" alt="image" src="https://github.com/user-attachments/assets/33da4b38-2a6e-4b42-9404-afe5807ccf10" />
+
 
 **SEB Grades**
 
