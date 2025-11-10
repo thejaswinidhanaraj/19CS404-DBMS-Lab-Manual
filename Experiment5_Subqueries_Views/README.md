@@ -221,6 +221,7 @@ HAVING COUNT(c.customer_id) > 1;
 
 **SEB Grades**
 
+<img width="1003" height="73" alt="image" src="https://github.com/user-attachments/assets/c8fb77dd-61fb-4d67-a0a1-dfadcf123130" />
 
 ## RESULT
 Thus, the SQL queries to implement subqueries and views have been executed successfully.
